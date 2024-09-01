@@ -5,19 +5,24 @@ import { TextEffect } from "./TextEffect";
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-screen ">
+    <div className="relative min-h-screen">
       {/* Background color for the image and content area */}
-      <div className="absolute inset-0 w-full md:w-2/3  -z-10" />
+      <div className="absolute inset-0 w-full md:w-2/3 -z-10" />
 
       {/* Content Wrapper */}
       <div className="flex flex-col md:flex-row items-center justify-between min-h-screen px-4 md:px-16 py-8 relative z-10">
         {/* Left Side Image */}
-        <div className="relative w-full md:w-1/2 h-60 md:h-auto flex items-center">
-          <img
-            src="/hero.jpg" // Replace with the correct path
-            alt="Hero Image"
-            className="object-cover w-full h-full"
-          />
+        <div className="relative w-full md:w-1/2 h-60 md:h-[600px] md:mb-96 flex items-center">
+          <div className="relative w-full h-full">
+            {" "}
+            {/* Set the height to 100% of its container */}
+            <Image
+              src="/hero.jpg" // Replace with the correct path
+              alt="Hero Image"
+              fill // Use the `fill` property to make the image cover its parent
+              style={{ objectFit: "cover" }} // Set object fit using `style` prop
+            />
+          </div>
         </div>
 
         {/* Right Side Content */}

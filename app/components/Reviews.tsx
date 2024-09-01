@@ -17,7 +17,7 @@ const ReviewCards = () => {
     },
     {
       review:
-        "A fantastic experience! Great communication and outstanding results.Exceeded our expectations.",
+        "A fantastic experience! Great communication and outstanding results. Exceeded our expectations.",
       name: "Silver Mark Islamabad",
       imageSrc: "/images/p4.jpg",
     },
@@ -39,15 +39,15 @@ const ReviewCards = () => {
             >
               {/* Review Text */}
               <p className="text-lg text-gray-100 mb-4 text-center italic">
-                "{review.review}"
+                {review.review}
               </p>
               {/* Client Image */}
               <div className="relative w-24 h-24 mb-4">
                 <Image
                   src={review.imageSrc}
                   alt={review.name}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  style={{ objectFit: "cover" }}
                   className="rounded-full"
                 />
               </div>

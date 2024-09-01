@@ -14,7 +14,7 @@ const About = () => {
           content="Learn more about our company and team."
         />
       </Head>
-      <main className="stext-gray-900">
+      <main className="text-gray-900 ">
         <section className="relative py-28 md:py-24">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
