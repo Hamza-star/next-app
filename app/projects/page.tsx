@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 const About = () => {
-  // Define your project data
+  // Define your project datagit remote add origin https://github.com/Hamza-star/next-app.git
   const projectData = [
     {
       imageSrc: "/images/p2.jpg",
