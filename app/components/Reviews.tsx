@@ -21,27 +21,29 @@ const ReviewCards = () => {
       name: "Silver Mark Islamabad",
       imageSrc: "/images/p4.jpg",
     },
+    {
+      review:
+        "I was completely impressed with their professionalism and customer service.",
+      name: "Naffco",
+      imageSrc: "/images/image.png",
+    },
   ];
 
   return (
-    <section className="bg-white py-20">
+    <section className="py-16 ">
       <div className="container mx-auto px-4">
-        <h6 className="text-3xl text-center text-zinc-950 font-bold mb-12">
-          Feedback From Our Valued Clients
+        <h6 className="text-3xl text-center text-zinc-950 font-extrabold mb-12">
+          <span className="bg-primary text-white">Feedback</span> From Our
+          Valued Clients
         </h6>
 
-        {/* Grid layout for reviews */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
           {reviews.map((review, index) => (
-            <div
-              key={index}
-              className="bg-primary bg-opacity-20 bg-blur-3xl p-6 rounded-lg shadow-lg flex flex-col items-center"
-            >
-              {/* Review Text */}
-              <p className="text-lg text-gray-100 mb-4 text-center italic">
+            <div key={index} className=" p-6  flex flex-col items-center">
+              <p className="text-lg text-gray-800 mb-4 text-center">
                 {review.review}
               </p>
-              {/* Client Image */}
+
               <div className="relative w-24 h-24 mb-4">
                 <Image
                   src={review.imageSrc}
@@ -51,8 +53,8 @@ const ReviewCards = () => {
                   className="rounded-full"
                 />
               </div>
-              {/* Client Name */}
-              <h2 className="text-xl font-semibold text-gray-200">
+
+              <h2 className="text-xl font-semibold text-gray-950">
                 {review.name}
               </h2>
             </div>

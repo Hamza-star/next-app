@@ -10,9 +10,9 @@ const TeamMembers = () => {
       large: true, // CEO's image will be larger
     },
     {
-      name: "Engr Mustehsan Mehdi",
-      role: "Head of Department (Operations)",
-      imageSrc: "/images/t2.jpg",
+      name: "Mr. Mushtaq Ahmad",
+      role: "Regional Manager (Lahore)",
+      imageSrc: "/images/t4.jpg",
     },
     {
       name: "Mr. Khurshid Alvi",
@@ -20,11 +20,6 @@ const TeamMembers = () => {
       imageSrc: "/images/t8.jpg",
     },
 
-    {
-      name: "Mr. Mushtaq Ahmad",
-      role: "Regional Manager (Lahore)",
-      imageSrc: "/images/t4.jpg",
-    },
     {
       name: "Mr. Tahir Nadeem",
       role: "Regional Manager (Multan)",

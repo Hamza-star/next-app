@@ -10,12 +10,13 @@ const App = () => {
   return (
     <div className="relative top-12">
       <Hero />
-      <main className="relative bottom-72">
+      <div className="">
         <About />
-        <Services />
-        <Reviews />
-        <Clients />
-      </main>
+      </div>
+
+      <Services />
+      <Reviews />
+      <Clients />
     </div>
   );
 };

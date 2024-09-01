@@ -2,8 +2,7 @@
 import Head from "next/head";
 import Image from "next/image";
 
-const About = () => {
-  // Define your project datagit remote add origin https://github.com/Hamza-star/next-app.git
+const Projects = () => {
   const projectData = [
     {
       imageSrc: "/images/p2.jpg",
@@ -49,14 +48,14 @@ const About = () => {
     {
       imageSrc: "/images/p7.jpg",
       title: "Gasco, Satiana Road, Faisalabad",
-      title2: "...",
+      title2: "Fire Fighting Project",
       description: "Supply and Installation of Fire Fighting System",
     },
 
     {
       imageSrc: "/images/p9.png",
       title: "Eco Petroleum, Sheikhupura",
-      title2: "...",
+      title2: "Fire Fighting Project",
       description: "Supply and Installation of Fire Fighting System",
     },
   ];
@@ -71,7 +70,6 @@ const About = () => {
         />
       </Head>
       <main className="text-gray-900">
-        {/* Header and introductory paragraph */}
         <section className="relative py-16 md:py-24">
           <div className="container mx-auto px-4 text-center">
             <p className="text-lg md:text-xl mt-8 text-primary font-bold">
@@ -80,7 +78,6 @@ const About = () => {
           </div>
         </section>
 
-        {/* Project sections */}
         <section className="relative  md:py-0">
           <div className="container mx-auto px-4">
             {projectData.map((project, index) => (
@@ -88,7 +85,6 @@ const About = () => {
                 key={index}
                 className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12"
               >
-                {/* Center the image container */}
                 <div className="flex justify-center items-center">
                   <div className="relative w-[80%] md:w-[60%] h-[300px] md:h-[400px]">
                     <Image
@@ -153,4 +149,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Projects;

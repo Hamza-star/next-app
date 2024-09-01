@@ -15,7 +15,7 @@ const About = () => {
         />
       </Head>
       <main className="text-gray-900 ">
-        <section className="relative py-28 md:py-24">
+        <section className="relative py-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h1 className="text-4xl text-primary md:text-5xl font-bold mb-4">
@@ -26,7 +26,7 @@ const About = () => {
                 difference.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16">
               {/* Increase image height */}
               <div className="relative h-[500px] md:h-[600px] mb-8 md:mb-0">
                 <Image

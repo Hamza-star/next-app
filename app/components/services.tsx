@@ -16,9 +16,9 @@ const services = [
     image: "/images/e2.jpg",
   },
   {
-    title: "Fire Cabinets",
+    title: "Fire Fighting Pumps",
     description: "Description of Service 3",
-    image: "/images/s4.png",
+    image: "/images/s2.jpg",
   },
 
   {
@@ -30,10 +30,9 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="relative py-16 bg-zinc-950 text-white">
-      <div className="container mx-auto px-4">
-        {/* Beautiful Heading */}
-        <div className="text-center mb-12">
+    <section className="relative mt-24 py-16 bg-zinc-950 text-white mb-24">
+      <div className="container mx-auto px-4 ">
+        <div className="text-center mb-8 ">
           <h2 className="text-4xl font-bold leading-tight mb-4 relative inline-block">
             <span className="absolute inset-x-0 bottom-0 h-1  rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
             Our Services
@@ -57,7 +56,6 @@ const Services = () => {
                   alt={service.title}
                   layout="fill"
                   objectFit="cover"
-                  className="rounded-t-lg"
                 />
               </div>
               <div className="p-6">
@@ -68,7 +66,6 @@ const Services = () => {
           ))}
         </div>
 
-        {/* More Services Button */}
         <div className="text-center mt-12">
           <Link href="/services">
             <Button className="inline-flex items-center px-6 py-6  text-white font-semibold rounded-lg  transition-colors duration-300 group">
